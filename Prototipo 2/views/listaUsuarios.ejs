@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/styles.css">
+</head>
+<body>
+    <h1>Lista de usuarios</h1>
+    <ul>
+        <% listaUsuarios.forEach((usuario) => { %>
+        <%- include('usuarioDetalle', { usuario: usuario }) %> 
+        <% }); %>
+    </ul>    
+    <div>
+        <input type=button onClick="location.href='/listadoCartas'" value='Ver Cartas'>
+    </div>
+</body>
+</html>

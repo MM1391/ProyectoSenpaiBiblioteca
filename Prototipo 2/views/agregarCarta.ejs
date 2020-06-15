@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Agregar carta</h1>
+    <form action="/agregarCarta" method="POST">
+        <div>
+            <input name="nombreCarta" placeholder="Nombre de la carta" type="text" required>
+        </div>
+        <div>
+            <select id="categoria" name="categoria">
+                <option value="monstruo">Monstruo</option>
+                <option value="magia">Magia</option>
+                <option value="trampa">Trampa</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <select id="obtenida" name="obtenida">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+                <option value="proxy">Proxy</option>
+            </select>
+        </div>        
+        <div>
+            <input type="submit" value="Agregar">
+        </div>
+    </form>
+</body>
+</html>

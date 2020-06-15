@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Editar usuario</h1>
+    <form action="/editarUsuario" method="POST">
+        <div>
+            <input name="nombreUsuario" placeholder="<%= editarUsuario[0].nombreUsuario %>" type="text" required>
+        </div>
+        <div>
+            <input name="correo" placeholder="<%= editarUsuario[0].correo %>" type="email" required></input>
+        </div>
+        <div>
+            <input type="submit" value="Guardar">
+        </div>
+    </form>
+</body>
+</html>

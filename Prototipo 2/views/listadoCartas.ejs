@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/styles.css">
+</head>
+<body>
+    <h1>Listado de cartas</h1>
+    <ul>
+        <% listadoCartas.forEach((carta) => { %>
+        <%- include('cartaDetalle', { carta: carta }) %> 
+        <% }); %>
+    </ul>
+    <div>
+        <input type=button onClick="location.href='/agregarCarta'" value='Agregar Carta'>
+    </div>
+    <div>
+        <input type=button onClick="location.href='/listaUsuarios'" value='Ver Usuarios'>
+    </div>
+</body>
+</html>

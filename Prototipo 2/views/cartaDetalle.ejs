@@ -1,0 +1,7 @@
+<li>
+    <%= carta.idCarta %>
+    <%= carta.nombreCarta %>
+    <%= carta.obtenida %>
+    <input type=button onClick="location.href='/listadoCartas/editarCarta/<%= carta.idCarta %>'" value='Editar Carta'>
+    <input type=button onClick="location.href='/agregarImgCarta/<%= carta.idCarta %>'" value='Agregar Imagen'>
+</li>
